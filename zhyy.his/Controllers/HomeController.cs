@@ -7,7 +7,7 @@ using System.Web.Mvc;
 namespace zhyy.his.Controllers
 {
     /// <summary>
-    /// 主页控制器
+    /// 主页控制器1
     /// </summary>
     public class HomeController : Controller
     {
