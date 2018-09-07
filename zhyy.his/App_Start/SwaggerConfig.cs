@@ -13,8 +13,14 @@ using Swashbuckle.Application;
 
 namespace zhyy.his
 {
+    /// <summary>
+    /// Swagger配置
+    /// </summary>
     public class SwaggerConfig
     {
+        /// <summary>
+        /// 注册
+        /// </summary>
         public static void Register()
         {
             var thisAssembly = typeof(SwaggerConfig).Assembly;
@@ -31,6 +37,10 @@ namespace zhyy.his
             });
         }
 
+        /// <summary>
+        /// 获取xml注释文档路径
+        /// </summary>
+        /// <returns></returns>
         protected static string GetXmlCommentsPath()
         {
             return System.String.Format(@"{0}\bin\zhyy.his.XML", System.AppDomain.CurrentDomain.BaseDirectory);
